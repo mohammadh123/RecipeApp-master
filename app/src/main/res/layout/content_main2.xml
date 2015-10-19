@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/empty_fridge2"
+    tools:context="com.example.mohammad.recipeapp.Main2Activity"
+    android:longClickable="true">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pork"
+        android:id="@+id/PorkCheckBox"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/KosherCheckBox"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:onClick="porkClicked" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegetarian"
+        android:id="@+id/VegetarianCheckBox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="211dp"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/KosherCheckBox"
+        android:text="Kosher"
+        android:layout_marginBottom="65dp"
+        android:layout_above="@+id/VegetarianCheckBox"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp"
+        android:onClick="kosherClicked" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Preferences"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/PorkCheckBox" />
+
+</RelativeLayout>
